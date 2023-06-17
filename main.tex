@@ -1,0 +1,201 @@
+\documentclass[12pt]{book}
+\usepackage[figuresright]{rotating}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage{soul}
+\setcounter{secnumdepth}{3}
+\usepackage{booktabs}
+% \usepackage[caption = false]{subfig}
+\usepackage{amsmath}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+\usepackage{pgfplots}
+\usepackage{adjustbox}
+\renewcommand{\&}{\textup{\symbol{`\&}}}
+\interfootnotelinepenalty=10000
+% \usepackage{biblatex}
+% Check the settings here for natbib
+\usepackage[nottoc]{tocbibind}
+\usepackage[round]{natbib}
+\usetikzlibrary{matrix, positioning}
+
+\mathchardef\mhyphen="2D % Define a "math hyphen"
+
+\usepackage{enumitem}
+\usepackage{todonotes}
+
+% for the drawings
+\usepackage{tikz}
+\usepackage{listofitems} % for \readlist to create arrays
+\usepackage{multirow}
+
+\usepackage{CJKutf8}
+
+\usepackage{amssymb}
+% Your other packages and settings
+
+% \addbibresource{references.bib}
+
+\title{Your title here}
+\author{\textbf{Your name here}\\
+Relatore: Nome e cognome relatore \\
+Correlatori: Nomi e cognomi correlatori\\
+Department of Interpreting and Translation\\
+Alma Mater Studiorum--Universit\`a di Bologna\\
+Forl\`i, Italy
+}
+\date{June 2021}
+\pgfplotsset{compat=1.15}
+\begin{document}
+%\maketitle
+\begin{center}
+{{\Large{Alma Mater Studiorum $\cdot$ Universit\`a di
+Bologna\\}}}
+\vspace{5mm}
+\mbox{\large{DIPARTIMENTO DI INTERPRETAZIONE E TRADUZIONE}}
+\vspace{5mm}
+{\small{\bf Corso di Laurea magistrale in Specialized Translation (classe 
+LM-94) }}
+\end{center}
+\vspace{15mm}
+\begin{center}
+{TESI DI LAUREA\\in SUBJECT HERE}
+\end{center}
+
+\vspace{15mm}
+\begin{center}
+\LARGE{\bf Your title here}
+\end{center}
+\vspace{25mm}
+\par
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+{\large{\bf CANDIDATO:\\Your name here}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}\raggedleft
+{\large{\bf RELATORE:\\Your supervisor here}}  
+\end{minipage}
+
+\hfill
+\begin{minipage}[t]{0.47\textwidth}\raggedleft
+{\large{\bf CORRELATRICE:\\ Your co-supervisor here\\CORRELATORE:\\Your co-supervisor here}}
+\end{minipage}
+
+\vspace{20mm}
+\begin{center}
+{\bf Anno Accademico 2022/2023\\
+Primo Appello}
+\end{center}
+\thispagestyle{empty}
+\renewcommand{\thepage}{\roman{page}}%
+\chapter*{Acknowledgements}
+
+Placeholder
+
+\thispagestyle{empty}
+
+
+
+\chapter*{Abstract}
+
+Placeholder
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction}
+\label{ch:intro}
+\renewcommand{\thepage}{\arabic{page}}
+
+Placeholder
+
+\chapter{This is a chapter}
+\label{background}
+
+Placeholder
+
+\section{This is a section}
+\label{sec:section}
+
+Placeholder
+
+\subsection{This is a subsection}
+\label{subsec:subsection}
+
+A quote:
+
+\begin{quotation}
+  ``Random quote.''
+\end{quotation}
+
+\section{This is a section}
+\label{sec:section}
+
+Placeholder
+
+\subsection{This is a subsection}
+\label{subsec:subsection}
+
+A table:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\ \hline
+    Row 1             & Row 1             & Row 1             \\ \hline
+    Row 2             & Row 2             & Row 2             \\ \hline
+    Row 3             & Row 3             & Row 3             \\ \hline
+  \end{tabular}
+  \caption{A table}
+  \label{tab:table}
+\end{table}
+
+\chapter{Another chapter}
+\label{background}
+
+Citations: \citep{lane2019natural}, \citet{lane2019natural}, \citep{lane2019natural, castano2021internet}, \citet{lane2019natural, castano2021internet}, \cite{lane2019natural}.
+
+\section{Another section}
+\label{sec:section}
+
+This is a figure:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{picture.png}
+  \caption{A figure}
+  \label{fig:figure}
+\end{figure}
+
+\subsection{Another subsection}
+\label{subsec:subsection}
+
+Placeholder
+
+
+\bibliography{references}
+\bibliographystyle{plainnat}
+
+\appendix
+
+\chapter{Appendix}
+
+Appendix here.
+
+
+
+\end{document}
